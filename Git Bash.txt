@@ -1,0 +1,50 @@
+1. Initialize a repository
+
+Before adding files, you need a Git repository:
+
+git init
+
+
+* Creates a `.git` folder in your current directory.
+* Turns your folder into a Git repository.
+
+
+2. Check the current status
+
+git status
+
+
+3. Add files to staging (index)
+
+Staging means preparing files for a commit. Some key commands:
+
+Add a specific file
+
+git add filename.txt
+
+
+Add multiple specific files
+
+git add file1.txt file2.txt file3.txt
+
+git add .
+
+4. Commit staged files
+
+After adding, you commit:
+
+git commit -m "Your commit message"
+
+5. Push to a remote repository
+
+git push origin main
+
+
+Quick Workflow Example
+
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <your-repo-url>
+git push -u origin main
